@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c5e1a5">
+
+    <TextView
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Когда у мамы день рождения?"
+        android:textSize="48sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        >
+
+        <Button
+            android:textSize="18sp"
+            android:id="@+id/button_option_1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="32 Марта"
+            android:textColor="#FFF"
+            android:backgroundTint="@color/grass"
+            android:padding="16dp"
+            android:layout_marginRight="8dp"/>
+        <Button
+            android:id="@+id/button_option_2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="8 марта"
+            android:textColor="#FFF"
+            android:backgroundTint="@color/red"
+            android:padding="16dp"
+            android:layout_marginRight="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <Button
+            android:textSize="18sp"
+            android:id="@+id/button_option_3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="23 марта"
+            android:textColor="#FFF"
+            android:backgroundTint="@color/yellow"
+            android:padding="16dp"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:textSize="18sp"
+            android:id="@+id/button_option_4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="9 января"
+            android:textColor="#FFF"
+            android:backgroundTint="@color/blue"
+            android:padding="16dp"
+            android:layout_marginRight="8dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

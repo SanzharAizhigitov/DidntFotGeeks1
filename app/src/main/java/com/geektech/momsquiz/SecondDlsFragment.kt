@@ -1,0 +1,46 @@
+package com.geektech.momsquiz
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.geektech.momsquiz.databinding.FragmentSecondDlsBinding
+
+class SecondDlsFragment : Fragment() {
+    lateinit var binding: FragmentSecondDlsBinding
+    lateinit var preferences: MyPreferences
+    private var num:Int = 0
+   override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentSecondDlsBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        preferences = MyPreferences(requireActivity())
+        binding.btn1.setOnClickListener{
+            num++
+            binding.tvNum.text = "$num/10"
+            if (num>9 ){
+                findNavController().navigate(R.id.secondDls2Fragment)
+            }
+           }
+        if (preferences.isYouCreator()){
+            binding.btnSkip.visibility = View.VISIBLE
+        }else{binding.btnSkip.visibility = View.GONE}
+        binding.btnSkip.setOnClickListener{
+            num += 100
+            binding.tvNum.text = "$num/10"
+            if (num>9 ){
+                findNavController().navigate(R.id.secondDls2Fragment)
+            }
+        }
+
+    }
+
+}

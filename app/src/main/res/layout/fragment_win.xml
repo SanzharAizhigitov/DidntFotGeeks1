@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5e1a5"
+    android:orientation="vertical"
+    tools:context=".WinFragment">
+
+    <TextView
+        android:id="@+id/win_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Ура ты выиграл! Хочешь переиграть?"
+        android:textColor="#FFF"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/grass"
+        android:padding="16dp"
+        android:text="Restart?"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/button_menu"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/grass"
+        android:padding="16dp"
+        android:text="Menu?"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
